@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Premium Roblox creator profile and Discord community hub." />
+  <title>Gamer Hub — Roblox Creator</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="loading" class="loading-screen"><div class="loader"></div></div>
+  <canvas id="bg-canvas" class="bg-canvas"></canvas>
+  <main class="container">
+    <header class="nav">
+      <div class="brand">Gamer Hub</div>
+      <nav>
+        <a href="#hero">Home</a>
+        <a href="#stats">Stats</a>
+        <a href="#activity">Activity</a>
+        <a href="#discord">Discord</a>
+      </nav>
+    </header>
+    <section id="hero" class="hero glass">
+      <div class="hero-left">
+        <div class="avatar-wrap">
+          <img id="avatarImg" alt="Roblox avatar" src="assets/avatar-placeholder.png">
+          <span class="verified" title="Verified">✔</span>
+        </div>
+        <div class="hero-meta">
+          <h1 id="username">Loading...</h1>
+          <p id="intro">Premium Roblox creator portfolio with live community tracking.</p>
+          <div class="cta">
+            <a id="joinGameBtn" class="btn secondary hidden">JOIN GAME</a>
+            <a id="profileBtn" class="btn" target="_blank">View Roblox Profile</a>
+            <a class="btn accent" href="https://discord.gg/crzxJSD9Jf" target="_blank">Join Discord</a>
+          </div>
+        </div>
+      </div>
+      <div class="hero-right">
+        <div class="glass-panel" id="statusPanel">
+          <h3>Live Status</h3>
+          <div id="liveStatus" class="status loading">Loading...</div>
+          <div id="currentActivity" class="muted">—</div>
+          <div id="gamePreview" class="game-preview hidden">
+            <img id="gameThumb" alt="Game thumbnail" src="">
+            <div id="gameInfo"><div id="placeName" class="muted">—</div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="stats" class="section">
+      <h2>Statistics</h2>
+      <div class="grid" id="statsGrid"></div>
+    </section>
+    <section id="activity" class="section">
+      <h2>Activity Timeline</h2>
+      <div id="timeline" class="timeline"></div>
+    </section>
+    <section id="discord" class="section glass">
+      <h2>Discord Community</h2>
+      <div class="discord-row">
+        <div class="discord-info">
+          <div class="discord-header">
+            <img src="assets/discord-logo.png" alt="Discord logo" class="discord-logo">
+            <div>
+              <h3 id="discordName">Loading...</h3>
+              <div class="muted" id="discordCounts">—</div>
+            </div>
+          </div>
+          <div class="discord-members" id="discordMembers"></div>
+          <div class="cta">
+            <a class="btn accent large" href="https://discord.gg/crzxJSD9Jf" target="_blank">JOIN DISCORD SERVER</a>
+          </div>
+        </div>
+        <div class="features">
+          <h3>Features</h3>
+          <div class="grid features-grid">
+            <div class="feature card">Live Roblox Tracking</div>
+            <div class="feature card">Real-Time Updates</div>
+            <div class="feature card">Discord Community</div>
+            <div class="feature card">Fast Performance</div>
+            <div class="feature card">Mobile Friendly</div>
+            <div class="feature card">Secure Backend</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer glass">
+      <div><a href="https://www.roblox.com/users/4745872952/profile" target="_blank">Roblox Profile</a> • <a href="https://discord.gg/crzxJSD9Jf" target="_blank">Discord Server</a></div>
+      <div>© <span id="year"></span> Gamer Hub</div>
+      <a id="backToTop" class="back-to-top">Back To Top</a>
+    </footer>
+  </main>
+  <script src="script.js" type="module"></script>
+</body>
+</html>
